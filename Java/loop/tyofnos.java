@@ -3,14 +3,8 @@ public class tyofnos{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         char cr;
-        int n;
-        int x;
-        int nt;
-        int nt1;
-        int x1;
-        double asn = 0;
-        double asn1 = 0;
-
+        int n ,x, nt, nt1, x1;
+        double asn = 0, asn1 = 0;
         System.out.println("Enter the number : ");
          n = scanner.nextInt();
         
