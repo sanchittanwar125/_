@@ -30,6 +30,7 @@ public class RPS{
         
         if(userChoice.equals("Rock") || userChoice.equals("rock") && compChoice.equals("Rock")){
             System.out.println("It a tie");
+            won = false;
         }else if(userChoice.equals("Rock")|| userChoice.equals("rock") && compChoice.equals("Paper")){
             System.out.println("You lose!!");
             won = false;
@@ -44,8 +45,10 @@ public class RPS{
             won = false;
         }else if(userChoice.equals("Paper")|| userChoice.equals("paper") && compChoice.equals("Paper")){
             System.out.println("Its a tie");
+            won = false;
         }else if(userChoice.equals("Scissors")|| userChoice.equals("scissors") && compChoice.equals("Scissors")){
             System.out.println("Its a tie");
+            won = false;
         }else if(userChoice.equals("Scissors")|| userChoice.equals("scissors") && compChoice.equals("Paper")){
             System.out.println("You Won!!");
             won = true;
