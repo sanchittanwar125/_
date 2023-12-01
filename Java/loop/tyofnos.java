@@ -3,15 +3,15 @@ public class tyofnos{
     public static void main(String args[]){
         Scanner scanner = new Scanner(System.in);
         char cr;
-        int n ,x, nt, nt1, x1;
+        long n ,x , x1 , nt, nt1, nt2, cksu = 0 , p = 1;
         double asn = 0, asn1 = 0;
-        System.out.println("Enter the number : ");
-         n = scanner.nextInt();
+        System.out.print("Enter the number : ");
+        n = scanner.nextLong();
         
          x = 0;
          nt = n;
          nt1 = n;
-         
+         nt2 = n;
         // reversing the digits        
         while(nt!=0){
             
@@ -29,18 +29,37 @@ public class tyofnos{
             nt1 = nt1/10;   
         }
         
+        // perfect number
+    
+        for(int i = 1; i <= nt2 / 2; i++){
+            if(nt2 % i == 0){
+                cksu += i;
+            }
+        }
+        
         // logic for declaration
         
-        if (x == n && asn1 == n){
-                System.out.println(n + " is a palindrome number as well as armstrong number.");
-        }else if (x == n && asn1 != n){
-            System.out.println(n + " is a palindrome number only.");
-        }else if (x != n && asn1 == n){
-            System.out.println(n + " is a armstrong number only.");
+        if (x == n && asn1 == n && cksu == n){
+            isPolindrome(); isArmstrong(); isPerfect();
+            System.out.println("Unreal!");
+        }else if (x == n && asn1 != n && cksu != nt2){
+            isPolindrome();
+        }else if (x != n && asn1 == n && cksu != nt2){
+            isArmstrong();
+        }else if (x != n && asn1 != n && cksu == nt2){
+            isPerfect();
         }else {
             System.out.println(n + " is just a normal number");
         }
-        
+    }
     
+    public static void isPolindrome(){
+        System.out.println("This is a Polindorme number.");
+    }
+    public static void isArmstrong(){
+        System.out.println("This is a Armstrong number.");
+    }
+    public static void isPerfect(){
+        System.out.println("This is a Perfect number.");
     }
 }

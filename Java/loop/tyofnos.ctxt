@@ -2,4 +2,10 @@
 comment0.target=tyofnos
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-numComments=2
+comment2.params=
+comment2.target=void\ isPolindrome()
+comment3.params=
+comment3.target=void\ isArmstrong()
+comment4.params=
+comment4.target=void\ isPerfect()
+numComments=5
