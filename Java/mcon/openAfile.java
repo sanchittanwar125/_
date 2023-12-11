@@ -3,6 +3,8 @@ import java.io.File;
 import java.util.Scanner;
 public class openAfile
 {
+   
+    
     public static void cmd() throws java.io.IOException {
         File file = new File("C:\\Windows\\system32\\cmd.exe");
         Desktop desktop =  Desktop.getDesktop();

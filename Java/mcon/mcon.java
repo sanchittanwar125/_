@@ -12,7 +12,7 @@ public class mcon
         
         in0 = scan.nextLine();
         o = in0;
-        if(o.equals("Open a file for me")){
+        if(o.equals("Open a app for me")){
             System.out.println("mcon < ok. which app?");
             String whpp = scan.nextLine();
             
